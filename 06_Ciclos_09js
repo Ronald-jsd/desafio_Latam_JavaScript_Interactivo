@@ -1,0 +1,36 @@
+/*
+Ejercicio
+
+Crea una función llamada `productoria` que reciba un número como parámetro y
+retorne la productoria de los números del 1 al número ingresado.
+
+Por ejemplo, si el número ingresado es 5, la función debe retornar 120. 
+Si el número ingresado es 10, la función debe retornar 3628800.
+
+Casos de prueba
+
+Puedes revisar los argumentos que ejecutaremos para evaluar tu función:
+| Test 1 | 9 |
+
+| Test 2 | 12 |
+
+| Test 3 | 7 |
+*/
+function productoria(numero){
+    let i = 1;
+    let multiplicacion=1;
+    while(i<=numero){
+        multiplicacion*=i;
+        i++;
+    }
+    return multiplicacion;
+}
+
+/*
+Salida:
+
+362880
+
+479001600
+
+5040*/
